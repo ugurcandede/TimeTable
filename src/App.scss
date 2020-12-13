@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Mulish", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background: rgba(32, 33, 36, 0.902) url("https://source.unsplash.com/user/erondu/1600x900") no-repeat center;
+  background-size: cover;
+
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+}

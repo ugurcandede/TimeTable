@@ -1,0 +1,24 @@
+.infos {
+  display: flex;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  font-size: 2.5vh;
+  font-weight: 300;
+  color: #f7f8fb;
+  text-shadow: 5px 5px 10px rgba(32, 33, 36, 0.902);
+
+  .dot {
+    font-size: 2vh;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+  }
+
+  .time {
+    font-weight: bold;
+  }
+
+  .date {
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,5 @@
+export {default as add} from './add_icon.svg'
+export {default as play} from './play_icon.svg'
+export {default as leftarrow} from './left-arrow.svg'
+export {default as remove} from './remove.svg'
+export {default as edit} from './edit.svg'

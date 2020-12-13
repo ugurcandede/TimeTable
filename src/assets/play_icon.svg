@@ -1,0 +1,17 @@
+<svg width="62" height="62" xmlns="http://www.w3.org/2000/svg"
+     viewBox="350 328 62 62">
+    <svg width="62" height="62" xmlns="http://www.w3.org/2000/svg"
+         fill="#f7f9fc" x="350" y="328">
+        <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62">
+            <path paint-order="stroke fill markers" fill-rule="evenodd"
+                  d="M31 62c17.12 0 31-13.88 31-31C62 13.88 48.12 0 31 0 13.88 0 0 13.88 0 31c0 17.12 13.88 31 31 31z"/>
+        </svg>
+    </svg>
+    <svg width="19" height="29" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0.171 19 28.657" fill="#4c5fff" x="374" y="345">
+        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="29" viewBox="0 0.873 18.07 27.254">
+            <path paint-order="stroke fill markers" fill-rule="evenodd"
+                  d="M17.41 13.287L1.59 1.213C.71.543 0 .894 0 2v25c0 1.106.71 1.458 1.59.787l15.82-12.074c.88-.67.88-1.755 0-2.426z"/>
+        </svg>
+    </svg>
+</svg>

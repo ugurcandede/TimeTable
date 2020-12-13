@@ -1,0 +1,99 @@
+$color-bg: rgba(32, 33, 36, 0.902);
+$color-blue: #4a5af5;
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+@mixin flexer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meet {
+  @include flexer();
+  position: relative;
+  // flex-wrap: wrap;
+  overflow: hidden;
+
+  padding: 30px 10px;
+  width: 50vw;
+  min-width: 300px;
+  max-width: 70%;
+  // height: 25vh;
+  box-shadow: 0 67px 55px -34px $color_bg;
+  border-radius: 20px;
+  background-color: white;
+  color: #000;
+
+  margin-top: 1.5rem;
+
+  img {
+    width: 10vw;
+    max-width: 10vw;
+    max-height: 10vh;
+
+    margin: 20px;
+    cursor: pointer;
+    // flex-grow: 1;
+  }
+
+  .meetDetail {
+    flex-grow: 9;
+  }
+
+  .meetInfo {
+    flex-grow: 2;
+    font-size: 14px;
+    color: inherit;
+    margin-left: 10px;
+
+    p:nth-child(2) {
+      font-size: 12px;
+      font-weight: initial;
+      color: #96a0c6;
+    }
+  }
+
+  .meetHover {
+    @include flexer();
+    height: 100%;
+    width: 20%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #372c76;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 300ms transform;
+
+    img {
+      // background: white;
+      margin: 20px 0;
+      min-width: 20px;
+      max-width: 3vh;
+    }
+  }
+
+  transition: 300ms all ease-in-out;
+
+  &:hover {
+    transform: scale(0.96);
+    background-color: $color-blue;
+    color: white;
+    margin-left: 2rem;
+    box-shadow: 0 67px 55px -34px darken($color: $color-bg, $amount: 35);
+
+    .meetHover {
+      transform: translateY(0);
+    }
+  }
+}

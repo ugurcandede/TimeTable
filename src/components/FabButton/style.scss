@@ -1,0 +1,22 @@
+.fab {
+  position: absolute;
+  bottom: 5vh;
+  right: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+
+  cursor: pointer;
+
+  img {
+    width: 5vh;
+    height: auto;
+  }
+
+  &:hover {
+    // background-color: #4a5af5;
+    transform: rotate(45deg) scale(1.2);
+  }
+}

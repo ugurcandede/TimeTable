@@ -1,0 +1,22 @@
+{
+  "meets": [
+    {
+      "name": "İleri Programlama",
+      "meetStartDate": "2020-12-16T13:00",
+      "meetEndDate": "2020-12-16T15:30",
+      "meetLocation": "Google Meet",
+      "meetLink": "meet.google.com/ovv-rnon-qxg",
+      "meetWith": "Burak Yavru",
+      "id": 1
+    },
+    {
+      "name": "Web Tabanlı Programlama",
+      "meetStartDate": "2020-12-16T15:30",
+      "meetEndDate": "2020-12-16T18:30",
+      "meetLocation": "Google Meet",
+      "meetLink": "meet.google.com/gjg-yciw-tyb",
+      "meetWith": "Burak Yavru",
+      "id": 2
+    }
+  ]
+}
