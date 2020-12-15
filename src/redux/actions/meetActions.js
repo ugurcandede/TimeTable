@@ -1,5 +1,7 @@
 import * as actionTypes from "./actionTypes";
+
 let URL = "https://5fd67902ea55c400160420ba.mockapi.io/meets/"
+// let URL = "http://192.168.1.192:2500/meets/"
 
 const createMeetSuccess = (meet) => {
     return {type: actionTypes.CREATE_MEET, payload: meet}
@@ -36,7 +38,7 @@ export const getMeetsApi = (meetDay) => {
 function saveMeetApi(meet) {
     return fetch(URL + (meet.id || ""), {
         method: meet.id ? "PUT" : "POST",
-        headers: { "content-type": "application/json" },
+        headers: {"content-type": "application/json"},
         body: JSON.stringify(meet)
     })
         .then(res => res.json())

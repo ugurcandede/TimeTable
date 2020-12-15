@@ -43,7 +43,16 @@ export default function MeetDetail({
                            type="text"/>
                 </div>
                 <div className="buttons">
-                    <button type="reset">Reset</button>
+                    <button type="reset" onClick={() => {
+                        setName("");
+                        setLocation("");
+                        setLink("");
+                        setmWith("");
+                        setsDate("");
+                        seteDate("");
+
+                    }}>Reset
+                    </button>
                     <button type="submit">Save</button>
                 </div>
             </form>

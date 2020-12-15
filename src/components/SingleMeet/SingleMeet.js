@@ -4,7 +4,6 @@ import {edit, play, remove} from '../../assets/'
 import moment from 'moment'
 import {Link} from "react-router-dom";
 
-
 export default function SingleMeet({
                                        id,
                                        name,
@@ -22,17 +21,29 @@ export default function SingleMeet({
 
     return (
         <div className="meet">
-            <img src={play} className="joinMeet" alt="Join Meet"
-                 onClick={() => window.open("https://" + meetLink, "_blank")}/>
+            {meetLink
+                ? (<img src={play}
+                        className="joinMeet"
+                        alt="Join Meet"
+                        onClick={() => window.open("https://" + meetLink, "_blank")}/>)
+                : null}
+
             <div className="meetDetail">
                 <h2>{name}</h2>
-                <p>{moment(meetStartDate, 'YYYY-MM-DD hh:mm').fromNow()}</p>
-                <p>{parseDate(meetStartDate)} - {parseDate(meetEndDate)} Saatleri Arası</p>
-                <p>{meetWith}</p>
+                {meetStartDate
+                    ? (<p>{moment(meetStartDate, 'YYYY-MM-DD hh:mm').fromNow()}</p>)
+                    : null}
+                {meetEndDate
+                    ? (<p>{parseDate(meetStartDate)} - {parseDate(meetEndDate)} Saatleri Arası</p>)
+                    : null}
+                {meetWith
+                    ? (<p>{meetWith}</p>)
+                    : null}
+
             </div>
             <div className="meetInfo">
-                <p>{meetLocation}</p>
-                <p>{meetLink}</p>
+                {meetLocation ? (<p>{meetLocation}</p>) : null}
+                {meetLink ? (<p>{meetLink}</p>) : null}
             </div>
             <div className="meetHover">
                 <Link to={"/meet/" + id}>

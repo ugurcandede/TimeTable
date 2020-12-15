@@ -7,7 +7,6 @@ const saveMeetReducer = (state = initialState.savedProduct, action) => {
             return action.payload;
         case actionTypes.CREATE_MEET_SUCCESS:
             return action.payload;
-
         default:
             return state;
     }
